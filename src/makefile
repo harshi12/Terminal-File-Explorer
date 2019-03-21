@@ -5,8 +5,8 @@ OBJ = common.o command_mode.o normal_mode.o
 %.o: %.cpp $(DEPS)
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-bhavi-file-explorer: $(OBJ)
+file_explorer: $(OBJ)
 	$(CC) $(CFLAGS) -o $@ $^
 
 clean:
-	rm -f *.o bhavi-file-explorer
+	rm -f *.o file_explorer
