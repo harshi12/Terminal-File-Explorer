@@ -11,6 +11,7 @@ extern termios new_attr;
 
 struct winsize w;
 
+// to get next input character
 char next_input_char_get()
 {
     cin.clear();
